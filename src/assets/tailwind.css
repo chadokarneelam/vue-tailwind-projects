@@ -1,0 +1,58 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components{
+    
+    .page-body{
+        @apply sm:bg-green-200 md:bg-blue-200 lg:bg-yellow-200 p-4 xl:bg-red-200 2xl:bg-orange-300 bg-purple-300 pt-3 h-[100vh] m-0
+    }
+    .nav{
+        @apply rounded-md shadow-xl py-2 bg-white flex space-x-2 flex-wrap px-1
+    }
+    .nav-list{
+        @apply bg-gradient-to-r from-white to-blue-400 rounded-md p-2 w-auto flex-auto w-auto min-w-[6rem] text-center text-black hover:nav-hov  shadow-md font-bold uppercase mt-2 cursor-pointer
+    }
+    .nav-hov{
+        @apply text-white bg-gradient-to-l from-black/90 to-blue-600 duration-1000 transition-all ease-out border-black
+    }
+    .mid-box{
+       @apply flex flex-wrap justify-center items-center h-[80vh]
+    }
+    .s-box{
+        @apply bg-white w-auto h-auto items-center rounded-xl flex flex-col sm:flex-row p-3 shadow-2xl
+    }
+    .pic{
+        @apply rounded-sm shadow-md p-3 w-40 object-fill
+    }
+    .h-pic{
+        @apply hover:scale-150 hover:shadow-none transition-all duration-1000
+    }
+    .detail{
+        @apply text-blue-800 font-semibold p-3 items-center
+    } 
+    .s-button{
+        @apply bg-gradient-to-r from-white to-blue-400 p-2 rounded-md hover:nav-hov items-center mt-3 shadow-2xl
+    }
+    .c-box{
+        @apply w-full -mt-10
+    }
+    .p-list{
+        @apply flex flex-col  h-auto bg-[#DEE2E7] p-2 shadow-xl rounded-md sm:flex-row items-center justify-center z-10 pb-5
+    }
+    .pic-2{
+        @apply bg-white rounded-md shadow-2xl w-full py-3 mt-3 mx-1
+    }
+    .product-box{
+        @apply bg-white rounded-lg p-3 flex flex-col sm:flex-row
+        items-center font-semibold shadow-xl hover:scale-125 transition-all duration-1000
+    }
+    .shipping{
+        @apply rounded-full p-1 bg-blue-300 w-24 shadow-lg
+    }
+    .cart{
+        @apply border-2 p-1 px-2 rounded-lg border-blue-900 hover:nav-hov shadow-lg
+    }
+}
